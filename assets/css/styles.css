@@ -142,7 +142,11 @@ background-color: var(--body-color);
 }
 
 /*==================== NAV ====================*/
-
+.nav{
+    max-width: 986px;
+    
+    
+}
 
 /* show menu */
 
