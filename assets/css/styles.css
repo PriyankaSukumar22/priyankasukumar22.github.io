@@ -29,7 +29,7 @@
 /*===== Font and typography=====*/
 :root{
   --body-font: 'Poppins', sans-serif;
-  --big-font-size: 2rem;
+  --big-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --normal-font-size: 0.938rem;
 }
@@ -90,6 +90,9 @@ img{
 }
 
 /*===== CLASS CSS ===== */
+.quote{
+  color: var(--first-color-alt);
+}
 .section-title{
   position: relative;
   font-size: var(--h2-font-size);
@@ -212,6 +215,9 @@ img{
 }
 .home__title-color{
   color: var(--first-color);
+}
+.home__subtitle-color{
+  color:var(--second-color);
 }
 .home__social{
   display: flex;
@@ -402,6 +408,57 @@ img{
   body{
     margin: 0;
   }
+  .wrapper{
+    display: inline-flex;
+  }
+  .wrapper.static-txt{
+    color:#0E2431;
+    font-size: large;
+    font-weight: 400;
+  }
+
+  .wrapper.dynamic-txts{
+    margin-left:0px;
+    line-height: 80px;
+    overflow: hidden;
+    height: 90px;
+  }
+  .dynamic-txts li{
+    color:--second-color;
+    list-style: none;
+    font-size:medium;
+    font-weight: 500;
+    top:0;
+    animation: slide 1.5s steps(3) infinite;
+  }
+  .dynamic-txts li span{
+    position: relative;
+  }
+  .dynamic-txts li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    background: #fff;;
+    border-left:2px solid #FFF;
+    animation: typing 3s steps(29) infinite;
+  }
+  @keyframes slide {
+   100%{
+     top: -360px;
+   }
+    
+  }
+  @keyframes typing {
+  40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}
   .section{
     padding-top: 4rem;
     padding-bottom: 3rem;
@@ -452,7 +509,12 @@ img{
     width: 457px;
     bottom: 15%;
   }
-
+  .home__subtitle{
+    font-size: var(--h3-font-size);
+    color: var(--text-color);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-0-75);
+}
   .about__container, .skills__container{
     grid-template-columns: repeat(2,1fr);
     align-items: center;
