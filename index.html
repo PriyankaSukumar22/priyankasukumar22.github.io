@@ -186,11 +186,15 @@
                     <header>
                         <h2>Write to me, Right Away!</h2>
                     </header>
-                    <form action="https://formspree.io/f/xdoydqoa" class="contact__form" method="POST">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea type="text" placeholder="Message" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Send" class="contact__button button">
+                        <form
+                        action="https://formspree.io/f/xdoydqoa"
+                        method="POST"
+                        class="contact__form"
+                      >
+                        <input type="text" placeholder="Name" class="contact__input" name="sendername">
+                        <input type="mail" placeholder="Email" class="contact__input" name="_replyto">
+                        <textarea type="text" placeholder="Message" id="" cols="0" rows="10" class="contact__input" name="message"></textarea>
+                        <input type="submit" value="Send Message" class="contact__button button"> 
                     </form>
                 </div>
             </section>
