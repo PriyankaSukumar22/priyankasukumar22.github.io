@@ -6,7 +6,9 @@
         <!--==================== UNICONS ====================-->
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
         <link rel="stylesheet" href="assets/css/styles.css">
-
+        <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="jquery.typist.js"></script>
+        <!--<script src="assets/js/typist.js"></script>-->
         <!-- =====BOX ICONS===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
@@ -25,7 +27,6 @@
                         <li class="nav__item"><a href="#home" class="nav__link active"><i class="uil uil-estate nav__icon"></i>Home</a></li>
                         <li class="nav__item"><a href="#about" class="nav__link"><i class="uil uil-user  nav__icon"></i>About</a></li>
                         <li class="nav__item"><a href="#project" class="nav__link"><i class="uil uil-book-open nav__icon"></i>Projects</a></li>
-                        <li class="nav__item"><a href="#interests" class="nav__link"><i class="uil uil-heart nav__icon"></i> Interests
                         </a>
                         <li class="nav__item"><a href="#contact" class="nav__link"><i class="uil uil-envelope-check  nav__icon"></i>Contact</a></li>
                     </ul>
@@ -41,7 +42,21 @@
             <!--===== HOME =====-->
             <section class="home bd-grid" id="home">
                 <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Priyanka Sukumar</span><br> Web Designer</h1>
+                    <h4>Hello World, I am</h4>
+                    <div class="home__img">
+                        <img src="assets/img/perfil.png" alt="Profile" width="auto" height="auto">
+                    </div>
+                    <h2 class="home__title"><span class="home__title-color">Priyanka Sukumar</h2>
+                    <h3>
+                       <b><div class="wrapper">
+                            <ul class="dynamic-txts">
+                                <li><span>Internet of Everything Enthusiast</span></li>
+                                <li><span>Ideation and Prototyping Lover</span></li>
+                                <li><span>MSD Fanatic </span></li>
+                             </ul>
+                        </div></b>
+                    </h3>
+                  
                     <div class="about__buttons">
                         <a download="" href="assets/pdf/Priyanka-CV.pdf" class="button"> 
                         Download CV<i class="uil uil-download-alt button__icon"></i></a>
@@ -59,23 +74,6 @@
                         <i class="uil uil-twitter-alt"></i>
                       </a>
                 </div>
-
-                <div class="home__img">    
-                    <svg class="home__blob viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha">
-                            <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                            130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                            97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                            0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                            165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                            129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                            -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                            <image class="home__blob-img" x='-4' y='0' xlink:href="assets/img/perfilPri.png"/>
-                        </g>
-                    </svg>
                 </div>
             </section>
 
@@ -85,83 +83,34 @@
 
                 <div class="about__container bd-grid">
                     <div class="about__img">
-                        <img src="assets/img/about.jpg" alt="">
+                        <img src="assets/img/perfilPri.png" alt="">
                     </div>
                     
                     <div>
-                        <h2 class="about__subtitle">I'am Marlon</h2>
-                        <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat ut voluptates soluta, aut earum nemo recusandae cumque perferendis! Recusandae alias accusamus atque.</p>           
+                        <h2 class="about__subtitle"> Opinionated | Self-Driven | Doer</h2>
+                        <p class="about__text">
+                            Post-Grad CS Student at PSG College of Technology.
+                            I find joy in Ideation and Prototyping.
+                            User Research and Design, Internet of Everything and Augmented Reality excites me.
+                            Engaged in development to Transform, Uplift and Enhance user experience in an inclusive manner.
+                        </p>
+                        <br>   
+                        <p class="about__text">
+                            Besides my Academic Excellence people regard me for my perspectives, articulation and confidence.
+                            I prefer Direction over Speed anyday.
+                        </p>  
+                        <br>
+                        <p class="about__text">
+                            <span class="quote">My biggest flex is I Slip, Sleep, Stride and Soar.</span>
+                        </p>         
                     </div>                                   
                 </div>
             </section>
 
-            <!--===== PROJECTS =====-->
-            <section class="project section" id="project">
+            
+            <!--===== Project =====-->
+            <section class="interests section" id="project">
                 <h2 class="section-title">Projects</h2>
-
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-html5 skills__icon'></i>
-                                <span class="skills__name">HTML5</span>
-                            </div>
-                            <div class="skills__bar skills__html">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">95%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">CSS3</span>
-                            </div>
-                            <div class="skills__bar skills__css">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-javascript skills__icon' ></i>
-                                <span class="skills__name">JAVASCRIPT</span>
-                            </div>
-                            <div class="skills__bar skills__js">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">65%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">UX/UI</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div>              
-                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
-                    </div>
-                </div>
-            </section>
-
-            <!--===== INTERESTS =====-->
-            <section class="interests section" id="interests">
-                <h2 class="section-title">Interests</h2>
 
                 <div class="work__container bd-grid">
                     <div class="work__img">
@@ -190,7 +139,7 @@
                 <h2 class="section-title">Contact</h2>
                 <div class="contact__container bd-grid">
                     <header>
-                        <h2>Write to me, Right Away!</h2>
+                        <h2><center>Write to me, Right Away!</center></h2>
                     </header>
                         <form
                         action="https://formspree.io/f/xdoydqoa"
