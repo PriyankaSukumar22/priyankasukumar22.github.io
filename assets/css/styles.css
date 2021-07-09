@@ -19,17 +19,7 @@
   --container-color:#FFF ;
 
 }
-.dark-theme{
-  --hue-color:#00FF94;
-  --second-color:#fff;
-  --container-color:#000;
 
-}
-/*===== Colors =====*/
-/*:root{
-  --first-color: #4070F4;
-  --second-color: #0E2431;
-}*/
 
 /*===== Font and typography=====*/
 :root{
@@ -482,13 +472,7 @@ body.dark-theme{
   color: #fff;
   margin: 0 var(--mb-2)
 }
-
-/* ===== MEDIA QUERIES=====*/
-@media screen and (min-width: 768px){
-  body{
-    margin: 0;
-  }
-  .wrapper{
+.wrapper{
     display: inline-flex;
   }
   .wrapper.static-txt{
@@ -504,7 +488,7 @@ body.dark-theme{
     height: 90px;
   }
   .dynamic-txts li{
-    color:--second-color;
+    color:#000;
     list-style: none;
     font-size:medium;
     font-weight: 500;
@@ -521,8 +505,8 @@ body.dark-theme{
     top:0;
     height: 100%;
     width: 100%;
-    background:--container-color;
-    border-left:2px solid --container-color;
+    background:#fff;
+    border-left:2px solid #fff;
     animation: typing 3s steps(29) infinite;
   }
   @keyframes slide {
@@ -539,6 +523,11 @@ body.dark-theme{
     left: 0;
   }
 }
+/* ===== MEDIA QUERIES=====*/
+@media screen and (min-width: 768px){
+  body{
+    margin: 0;
+  }
   .section{
     padding-top: 4rem;
     padding-bottom: 3rem;
